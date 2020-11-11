@@ -2,10 +2,14 @@
     <div id="homeBox">
         <img alt="Valo logo" src="../assets/logo.png">
         <div id="dateBox">
-            <h1>{{dateRange}}</h1>
+            <h1>{{dRange}}</h1>
         </div>
         <div id="regBox">
             <a href="https://forms.gle/aQBrTTwFWAogu9SGA">Register</a>
+        </div>
+        <div id="deadlineBox">
+            <p>Early Registration Deadline {{eDead}}</p>
+            <p>Final Registration Deadline {{lDead}}</p>
         </div>
     </div>
 </template>
@@ -13,9 +17,11 @@
 <script>
 export default {
     name:"Home",
-    date(){
+    data(){
         return{
-            dateRange:"NOV 23 - NOV 27",
+            dRange:"NOV 23 - NOV 27",
+            eDead:"November 15, 2020, 11:59PM",
+            lDead:"November 22, 2020, 11:59PM"
         }
     },
 }
@@ -29,6 +35,17 @@ export default {
         margin: auto;
         width:500px;
         background-color: brown;
+    }
+    #dateBox{
+        text-align: center;
+    }
+    #deadlineBox{
+        text-align: center;
+        p{
+            font-size: 1vw;
+            margin-top: 2px;
+            margin-bottom: 0px;
+        }
     }
     #regBox{
         background-color: aqua;
