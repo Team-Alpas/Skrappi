@@ -1,6 +1,10 @@
 <template>
-    <div>
-        <p>Schedule</p>
+    <div id="schedBox">
+        <div id="navBox">
+            <p>Group A</p>
+            <p>Group B</p>
+            <p>Finals</p>
+        </div>
     </div>
 </template>
 
@@ -10,7 +14,15 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss"scoped>
+#schedBox{
+    #navBox{
+        display:flex;
+        background-color: chartreuse;
+        p{
+            padding:0% 2%;
+        }
+    }
+}
 </style>
 
