@@ -1,4 +1,4 @@
-# "Potential" App
+# Cyclify App
 
 A Vue.js Progressive Web Application (PWA) for Backpack
 
