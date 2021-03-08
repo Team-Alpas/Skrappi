@@ -2,14 +2,14 @@
     <div id = "Body">
         <div id = "navBox">
             <div id = "title">
-                <h1>ICpEP.SE-Mapua Valorant Act II</h1>
+                <router-link id="header" to="/Home">App Title Here</router-link>
             </div>
             <div id = "links">
-            <router-link v-if="mobileView >=750" id="link" to="/Home">Home</router-link>
-            <router-link v-if="mobileView >=750" id="link" to="/Schedule">Schedule</router-link>
-            <router-link v-if="mobileView >=750" id="link" to="/Standings">Standings</router-link>
-            <router-link v-if="mobileView >=750" id="link" to="/About">About</router-link>
-            <router-link v-if="mobileView >=750" id="link" to="/Contact">Contact</router-link>
+            <router-link v-if="mobileView >=750" id="link" to="/Home">Request</router-link>
+            <router-link v-if="mobileView >=750" id="link" to="/Schedule">Donate</router-link>
+            <router-link v-if="mobileView >=750" id="link" to="/Standings">Exchange</router-link>
+            <router-link v-if="mobileView >=750" id="link" to="/About">Barter</router-link>
+            <router-link v-if="mobileView >=750" id="link" to="/Auction">Auction</router-link>
             </div>
             <div id = "barBox">
             <i v-if="mobileView < 750" button @click="sideShow = !sideShow" class="fa fa-bars"></i>
@@ -21,7 +21,7 @@
                 <router-link  id="link" to="/Schedule">Schedule</router-link>
                 <router-link  id="link" to="/Standings">Standings</router-link>
                 <router-link  id="link" to="/About">About</router-link>
-                <router-link  id="link" to="/Contact">Contact</router-link>
+                <router-link  id="link" to="/Auction">Auction</router-link>
                 </div>
             </transition>
         <div id = "content">
@@ -61,24 +61,25 @@ export default {
     background-color: aqua;
     display:flex;
     #title{
-        h1{
-            padding: 0.75% 0 0.5% 1vw;
+        padding:1vmax;
+        #header{
+            //padding: 0.75% 0 0.5% 1vw;
             font-size: 20px;
             background-color: darkgreen;
         }
     }
     #links{
-        margin-left: auto;
+        margin-left: 1vw;
         background-color: darkgrey;
-        text-align: right;
         margin-top: 20px;
         #link{
             text-align: center;
-            padding: 50% 2vw 50% 2vw;
+            padding: 50% 2vw;
             background-color: crimson;
         }
     }
     #barBox{
+        margin-left:auto;
         i{
             background-color: darkblue;
             padding: 20px;

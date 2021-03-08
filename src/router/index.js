@@ -35,9 +35,9 @@ const routes = [
                 meta: { title: 'About'},
             },
             {
-                path: 'Contact',
-                component: () => import('@/components/Contact.vue'),
-                meta: { title: 'Contact'},
+                path: 'Auction',
+                component: () => import('@/components/Auction.vue'),
+                meta: { title: 'Auction'},
             },
         ]
     }
