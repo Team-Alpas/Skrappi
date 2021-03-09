@@ -1,6 +1,6 @@
-# "Potential" App
+# Skrappi App
 
-A Vue.js Progressive Web Application (PWA) for Backpack
+A Vue.js Progressive Web Application (PWA) for Skrappi
 
 ## Requirements
 * Node.js
