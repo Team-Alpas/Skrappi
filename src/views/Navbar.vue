@@ -2,7 +2,7 @@
     <div id = "Body">
         <div id = "navBox">
             <div id = "title">
-                <router-link id="header" to="/Home">App Title Here</router-link>
+                <router-link id="header" to="/Home">Skrappi</router-link>
             </div>
             <div id = "links">
             <router-link v-if="mobileView >=750" id="link" to="/Home">Request</router-link>
