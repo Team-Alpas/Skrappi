@@ -20,19 +20,24 @@ const routes = [
                 meta: { title: 'Home'},
             },
             {
-                path: 'Schedule',
-                component: () => import('@/components/Schedule.vue'),
-                meta: { title: 'Schedule'},
+                path: 'Request',
+                component: () => import('@/components/Request.vue'),
+                meta: { title: 'Request'},
             },
             {
-                path: 'Standings',
-                component: () => import('@/components/Standings.vue'),
-                meta: { title: 'Standings'},
+                path: 'Donate',
+                component: () => import('@/components/Donate.vue'),
+                meta: { title: 'Donate'},
             },
             {
-                path: 'About',
-                component: () => import('@/components/About.vue'),
-                meta: { title: 'About'},
+                path: 'Exchange',
+                component: () => import('@/components/Exchange.vue'),
+                meta: { title: 'Exchange'},
+            },
+            {
+                path: 'BuynSell',
+                component: () => import('@/components/BuynSell.vue'),
+                meta: { title: 'BuynSell'},
             },
             {
                 path: 'Auction',

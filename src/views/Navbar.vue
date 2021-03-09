@@ -5,10 +5,10 @@
                 <router-link id="header" to="/Home">Skrappi</router-link>
             </div>
             <div id = "links">
-            <router-link v-if="mobileView >=750" id="link" to="/Home">Request</router-link>
-            <router-link v-if="mobileView >=750" id="link" to="/Schedule">Donate</router-link>
-            <router-link v-if="mobileView >=750" id="link" to="/Standings">Exchange</router-link>
-            <router-link v-if="mobileView >=750" id="link" to="/About">Barter</router-link>
+            <router-link v-if="mobileView >=750" id="link" to="/Request">Request</router-link>
+            <router-link v-if="mobileView >=750" id="link" to="/Donate">Donate</router-link>
+            <router-link v-if="mobileView >=750" id="link" to="/Exchange">Exchange</router-link>
+            <router-link v-if="mobileView >=750" id="link" to="/BuynSell">Buy and Sell</router-link>
             <router-link v-if="mobileView >=750" id="link" to="/Auction">Auction</router-link>
             </div>
             <div id = "barBox">

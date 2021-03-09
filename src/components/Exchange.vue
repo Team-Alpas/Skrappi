@@ -1,5 +1,5 @@
 <template>
-    <div id="schedBox">
+    <div id="standBox">
         <div id="navBox">
             <p>Group A</p>
             <p>Group B</p>
@@ -10,15 +10,18 @@
 
 <script>
 export default {
-    name:"Schedule",
+    name:"Exchange",
 }
 </script>
 
-<style lang="scss"scoped>
-#schedBox{
+<style lang="scss" scoped>
+#standBox{
+    float:left;
+    background-color: chocolate;
+    width:100%;
     #navBox{
-        display:flex;
         background-color: chartreuse;
+        display: flex;
         p{
             padding:0% 2%;
         }
