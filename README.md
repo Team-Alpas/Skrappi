@@ -1,4 +1,4 @@
-# Cyclify App
+# Skrappi App
 
 A Vue.js Progressive Web Application (PWA) for Backpack
 
