@@ -2,15 +2,24 @@
     <div id = "Body">
         <div id = "navBox">
             <div id = "title">
-                <router-link id="header" to="/Home">Skrappi</router-link>
+                <router-link id="header" to="/Home"><img alt="Valo logo" src="../assets/skrappi_logo.png"></router-link>
             </div>
             <div id = "links">
-            <router-link v-if="mobileView >=750" id="link" to="/Request">Request</router-link>
-            <router-link v-if="mobileView >=750" id="link" to="/Donate">Donate</router-link>
-            <router-link v-if="mobileView >=750" id="link" to="/Exchange">Exchange</router-link>
-            <router-link v-if="mobileView >=750" id="link" to="/BuynSell">Buy and Sell</router-link>
-            <router-link v-if="mobileView >=750" id="link" to="/Auction">Auction</router-link>
-            <router-link v-if="mobileView >=750" id="link" to="/signup">Sign Up</router-link>
+                <div id = "linkBox">
+                    <router-link v-if="mobileView >=750" id="link" to="/Request">REQUEST</router-link>
+                    <router-link v-if="mobileView >=750" id="link" to="/Donate">DONATE</router-link>
+                    <router-link v-if="mobileView >=750" id="link" to="/Exchange">EXCHANGE</router-link>
+                    <router-link v-if="mobileView >=750" id="link" to="/BuynSell">SHOP</router-link>
+                </div>
+            </div>
+            <div id = "topSign">
+                <div id = "profileBox">
+                    <p id="plink">LOGIN</p>
+                    <router-link v-if="mobileView >=750" id="plink" to="/signup">SIGN UP</router-link>
+                    <p id="plink">ABOUT TEAM ALPAS</p>
+                </div>
+                <div id = "searchBox">
+                </div>
             </div>
             <div id = "barBox">
             <i v-if="mobileView < 750" button @click="sideShow = !sideShow" class="fa fa-bars"></i>
@@ -18,11 +27,10 @@
         </div>
             <transition name="slide-fade">
                 <div id = "sideBar" v-if="sideShow">
-                <router-link  id="link" to="/Request">Request</router-link>
-                <router-link  id="link" to="/Donate">Donate</router-link>
-                <router-link  id="link" to="/Exchange">Exchange</router-link>
-                <router-link  id="link" to="/BuynSell">Buy and Sell</router-link>
-                <router-link  id="link" to="/Auction">Auction</router-link>
+                <router-link  id="link" to="/Request">REQUEST</router-link>
+                <router-link  id="link" to="/Donate">DONATE</router-link>
+                <router-link  id="link" to="/Exchange">EXCHANGE</router-link>
+                <router-link  id="link" to="/BuynSell">SHOP</router-link>
                 </div>
             </transition>
         <div id = "content">
@@ -56,27 +64,53 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+a { text-decoration: none; }
 #navBox{
     top: 0%;
     overflow:hidden;
     background-color: aqua;
     display:flex;
     #title{
-        padding:1vmax;
-        #header{
-            //padding: 0.75% 0 0.5% 1vw;
-            font-size: 20px;
-            background-color: darkgreen;
+        padding-left:2vw;
+        padding-right:2vw;
+        margin-top:1vw;
+        img{
+            width:3vw;
+        }
+    }
+    #topSign{
+        background-color: red;
+        //padding:5%;
+        width:50%;
+        display:grid;
+        #profileBox{
+            background-color:blueviolet;
+            display:flex;
+            #plink{
+                padding-left:2%;
+
+            }
+        }
+        #searchBox{
+            background-color: burlywood;
         }
     }
     #links{
-        margin-left: 1vw;
+        //margin-left: 1vw;
         background-color: darkgrey;
-        margin-top: 20px;
-        #link{
-            text-align: center;
-            padding: 50% 2vw;
-            background-color: crimson;
+        width:50%;
+        //margin-top: 20px;
+        padding-top:2%;
+        #linkBox{
+            #link{
+                text-align: center;
+                padding: 50% 2vw;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28px;
+            }
         }
     }
     #barBox{
