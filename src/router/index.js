@@ -44,6 +44,11 @@ const routes = [
                 component: () => import('@/components/Auction.vue'),
                 meta: { title: 'Auction'},
             },
+            {
+                path:'signup',
+                component: () => import('@/components/signup.vue'),
+                meta: {title:'signup'},
+            },
         ]
     }
 ]

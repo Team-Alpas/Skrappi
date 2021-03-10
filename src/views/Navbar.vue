@@ -10,6 +10,7 @@
             <router-link v-if="mobileView >=750" id="link" to="/Exchange">Exchange</router-link>
             <router-link v-if="mobileView >=750" id="link" to="/BuynSell">Buy and Sell</router-link>
             <router-link v-if="mobileView >=750" id="link" to="/Auction">Auction</router-link>
+            <router-link v-if="mobileView >=750" id="link" to="/signup">Sign Up</router-link>
             </div>
             <div id = "barBox">
             <i v-if="mobileView < 750" button @click="sideShow = !sideShow" class="fa fa-bars"></i>
