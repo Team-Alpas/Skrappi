@@ -17,10 +17,10 @@
         </div>
             <transition name="slide-fade">
                 <div id = "sideBar" v-if="sideShow">
-                <router-link  id="link" to="/Home">Home</router-link>
-                <router-link  id="link" to="/Schedule">Schedule</router-link>
-                <router-link  id="link" to="/Standings">Standings</router-link>
-                <router-link  id="link" to="/About">About</router-link>
+                <router-link  id="link" to="/Request">Request</router-link>
+                <router-link  id="link" to="/Donate">Donate</router-link>
+                <router-link  id="link" to="/Exchange">Exchange</router-link>
+                <router-link  id="link" to="/BuynSell">Buy and Sell</router-link>
                 <router-link  id="link" to="/Auction">Auction</router-link>
                 </div>
             </transition>
