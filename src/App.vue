@@ -10,14 +10,17 @@ export default {
 }
 </script>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+<style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700&display=swap');
 #app {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Kanit', Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-body{
-  margin:0%;
+body {
+  margin: 0px;
+}
+a {
+  text-decoration: none;
 }
 </style>

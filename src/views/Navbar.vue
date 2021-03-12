@@ -2,35 +2,30 @@
     <div id = "Body">
         <div id = "navBox">
             <div id = "title">
-                <router-link id="header" to="/Home"><img alt="Valo logo" src="../assets/skrappi_logo.png"></router-link>
+                <router-link id="header" to="/Home"><img alt="skrappi_text" src="../assets/skrappi_text.png"></router-link>
             </div>
             <div id = "links">
                 <div id = "linkBox">
-                    <router-link v-if="mobileView >=750" id="link" to="/Request">REQUEST</router-link>
-                    <router-link v-if="mobileView >=750" id="link" to="/Donate">DONATE</router-link>
-                    <router-link v-if="mobileView >=750" id="link" to="/Exchange">EXCHANGE</router-link>
-                    <router-link v-if="mobileView >=750" id="link" to="/BuynSell">SHOP</router-link>
-                </div>
-            </div>
-            <div id = "topSign">
-                <div id = "profileBox">
-                    <p id="plink">LOGIN</p>
-                    <router-link v-if="mobileView >=750" id="plink" to="/signup">SIGN UP</router-link>
-                    <p id="plink">ABOUT TEAM ALPAS</p>
-                </div>
-                <div id = "searchBox">
+                    <router-link v-if="mobileView >=600" id="link" to="/Donate">Donate</router-link>
+                    <router-link v-if="mobileView >=600" id="link" to="/Request">Request</router-link>
+                    <router-link v-if="mobileView >=600" id="link" to="/FAQ">FAQ</router-link>
+                    <router-link v-if="mobileView >=600" id="link" to="/About">About</router-link>
+                    <router-link v-if="mobileView >=600" id="link" to="/Login">Login</router-link>
+                    <router-link v-if="mobileView >=600" id="link" to="/signup">Sign Up</router-link>
                 </div>
             </div>
             <div id = "barBox">
-            <i v-if="mobileView < 750" button @click="sideShow = !sideShow" class="fa fa-bars"></i>
+            <i v-if="mobileView < 600" button @click="sideShow = !sideShow" class="fa fa-bars"></i>
             </div>
         </div>
             <transition name="slide-fade">
                 <div id = "sideBar" v-if="sideShow">
-                <router-link  id="link" to="/Request">REQUEST</router-link>
-                <router-link  id="link" to="/Donate">DONATE</router-link>
-                <router-link  id="link" to="/Exchange">EXCHANGE</router-link>
-                <router-link  id="link" to="/BuynSell">SHOP</router-link>
+                <router-link  id="link" to="/Donate">Donate</router-link>
+                <router-link  id="link" to="/Request">Request</router-link>
+                <router-link  id="link" to="/FAQ">FAQ</router-link>
+                <router-link  id="link" to="/About">About</router-link>
+                <router-link  id="link" to="/Login">Login</router-link>
+                <router-link  id="link" to="/Sign Up">Sign Up</router-link>
                 </div>
             </transition>
         <div id = "content">
@@ -68,48 +63,34 @@ a { text-decoration: none; }
 #navBox{
     top: 0%;
     overflow:hidden;
-    background-color: aqua;
+    //background-color: aqua;
     display:flex;
     #title{
+        /*
         padding-left:2vw;
         padding-right:2vw;
-        margin-top:1vw;
+        */
+        margin:2vw 4vw;
         img{
-            width:3vw;
-        }
-    }
-    #topSign{
-        background-color: red;
-        //padding:5%;
-        width:50%;
-        display:grid;
-        #profileBox{
-            background-color:blueviolet;
-            display:flex;
-            #plink{
-                padding-left:2%;
-
-            }
-        }
-        #searchBox{
-            background-color: burlywood;
+            width:12vw;
         }
     }
     #links{
         //margin-left: 1vw;
-        background-color: darkgrey;
-        width:50%;
-        //margin-top: 20px;
+        //background-color: darkgrey;
+        width:100%;
+        margin: 1vw auto;
         padding-top:2%;
+        padding-left:40%;
         #linkBox{
             #link{
                 text-align: center;
-                padding: 50% 2vw;
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 24px;
-                line-height: 28px;
+                padding: 50% 1vw;
+                font-size: 150%;
+                color:#5d5d5d;
+                &:hover{
+                    color: #7ae06e;
+                }
             }
         }
     }

@@ -1,12 +1,12 @@
 <template>
     <div>
-        <p>Auction</p>
-    </div>    
+        <p>Buy and Sell</p>
+    </div>
 </template>
 
 <script>
 export default {
-    name:'Auction',
+    name:'About',
 }
 </script>
 

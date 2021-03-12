@@ -30,24 +30,24 @@ const routes = [
                 meta: { title: 'Donate'},
             },
             {
-                path: 'Exchange',
-                component: () => import('@/components/Exchange.vue'),
-                meta: { title: 'Exchange'},
+                path: 'FAQ',
+                component: () => import('@/components/FAQ.vue'),
+                meta: { title: 'FAQ'},
             },
             {
-                path: 'BuynSell',
-                component: () => import('@/components/BuynSell.vue'),
-                meta: { title: 'BuynSell'},
-            },
-            {
-                path: 'Auction',
-                component: () => import('@/components/Auction.vue'),
-                meta: { title: 'Auction'},
+                path: 'About',
+                component: () => import('@/components/About.vue'),
+                meta: { title: 'About'},
             },
             {
                 path:'signup',
                 component: () => import('@/components/signup.vue'),
                 meta: {title:'signup'},
+            },
+            {
+                path:'Login',
+                component: () => import('@/components/Login.vue'),
+                meta: {title:'Login'},
             },
         ]
     }
