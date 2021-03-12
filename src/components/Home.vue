@@ -1,11 +1,17 @@
 <template>
     <div id="homeBox">
-        <img alt="skrappi logo" src="../assets/skrappi.png">
+        <img id="logo" alt="skrappi logo" src="../assets/skrappi.png">
         <div class="search-box">
             <a class="search-btn" href="#"><i class="fas fa-search fa-lg"></i></a>
             <input class="search-txt" type="text" name="" placeholder="Looking for a place to Donate?">
             <a class="caret-down-btn" href="#"><i class="fas fa-caret-down fa-lg"></i></a>
         </div>
+        <div id="infoBox1">
+            <h1>{{hMessage}}</h1>
+            <h2>{{hDesc1}}</h2>
+            <h2>{{hDesc2}}</h2>
+        </div>
+        <img id="wave" alt="wave1" src="../assets/wave.png">
     </div>
 </template>
 
@@ -26,7 +32,7 @@ export default {
 
 <style lang="scss" scoped>
 #homeBox{
-    img{
+    #logo{
         display:block;
         //padding: 3%;
         margin: auto;
@@ -80,6 +86,24 @@ export default {
         float: right;
         margin-right: 10px;
         &:hover { color: white; }
+    }
+    #infoBox1{
+        background-color: #a2d74a;
+        width:100%;
+        height:18vw;
+        margin-top:5%;
+        text-align: center;
+        h1{
+            color:white;
+            padding-top:5%;
+        }
+        h2{
+            color:white;
+            
+        }
+    }
+    #wave{
+        width:100%;
     }
 }
 </style>
