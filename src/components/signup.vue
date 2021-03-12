@@ -31,7 +31,7 @@ export default {
 
 
 #body{
-    margin-left: 10rem;
+    margin-left: 15%;
 }
 #signup_txt{
     p{

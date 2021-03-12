@@ -86,7 +86,7 @@ a { text-decoration: none; }
             #link{
                 text-align: center;
                 padding: 50% 1vw;
-                font-size: 150%;
+                font-size:calc(10px + 1vw);
                 color:gray;
                 &:hover{
                     color: #7ae06e;
@@ -96,9 +96,11 @@ a { text-decoration: none; }
     }
     #barBox{
         margin-left:auto;
+        margin-right:0;
         i{
-            background-color: darkblue;
+            background-color: #a2d74a;
             padding: 20px;
+            color:white;
         }
     }
 }
@@ -116,10 +118,14 @@ opacity: 0;
 #sideBar{
     float:right;
     display:grid;
-    background-color: darkmagenta;
+    background-color: #a2d74a;
     width:100%;
     #link{
         padding:3%;
+        color:white;
+        &:hover{
+            color:gray;
+        }
     }
 }
 </style>

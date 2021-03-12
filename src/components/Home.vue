@@ -12,6 +12,16 @@
             <h2>{{hDesc2}}</h2>
         </div>
         <img id="wave" alt="wave1" src="../assets/wave.png">
+        <div id="infoBox2">
+        </div>
+        <div id="infoBox3">
+        </div>
+        <div id="infoBox4">
+        </div>
+        <div id="infoBox5">
+        </div>
+        <div id="footer">
+        </div>
     </div>
 </template>
 
@@ -38,7 +48,8 @@ export default {
         margin: auto;
         padding-top:3%;
         padding-bottom: 3%;
-        width:16%;
+        min-width:200px;
+        max-width:16%;
         filter: drop-shadow(10px 10px 4px #e3e3e3);
         //background-color: brown;
     }
@@ -58,7 +69,8 @@ export default {
         border-color:gray;
         border-style: solid;
         border-width: thin;
-        width:30%;
+        min-width: 300px;
+        max-width:30%;
         margin:auto;
         &:hover {
             transition: 0.3s ease-in-out;
@@ -90,7 +102,7 @@ export default {
     #infoBox1{
         background-color: #a2d74a;
         width:100%;
-        height:18vw;
+        height:450px;
         margin-top:5%;
         text-align: center;
         h1{
@@ -104,6 +116,26 @@ export default {
     }
     #wave{
         width:100%;
+    }
+    #infoBox2{
+        background-color: white;
+        height:450px;
+    }
+    #infoBox3{
+        background-color: #f8f8f8;
+        height:450px;
+    }
+    #infoBox4{
+        background-color: white;
+        height:450px;
+    }
+    #infoBox5{
+        background-color: #f8f8f8;
+        height:450px;
+    }
+    #footer{
+        background-color: #a2d74a;
+        height:350px;
     }
 }
 </style>
