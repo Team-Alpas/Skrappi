@@ -61,7 +61,7 @@ export default {
 <style lang="scss" scoped>
 a { text-decoration: none; }
 #navBox{
-    top: 0%;
+    margin-top:5px;
     overflow:hidden;
     //background-color: aqua;
     display:flex;
@@ -72,7 +72,7 @@ a { text-decoration: none; }
         */
         margin:2vw 4vw;
         img{
-            width:12vw;
+            width: 200px;
         }
     }
     #links{
@@ -87,7 +87,7 @@ a { text-decoration: none; }
                 text-align: center;
                 padding: 50% 1vw;
                 font-size: 150%;
-                color:#5d5d5d;
+                color:gray;
                 &:hover{
                     color: #7ae06e;
                 }
