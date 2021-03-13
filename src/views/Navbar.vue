@@ -12,6 +12,7 @@
                     <router-link v-if="mobileView >=650" id="link" to="/About">About</router-link>
                     <router-link v-if="mobileView >=650" id="link" to="/Login">Login</router-link>
                     <router-link v-if="mobileView >=650" id="link" to="/signup">Sign Up</router-link>
+                    <router-link v-if="mobileView >=650" id="link" to="/myaccount">My Account</router-link>
                 </div>
             </div>
             <div id = "barBox">
@@ -26,6 +27,7 @@
                 <router-link  id="link" to="/About">About</router-link>
                 <router-link  id="link" to="/Login">Login</router-link>
                 <router-link  id="link" to="/Sign Up">Sign Up</router-link>
+                <router-link  id="link" to="/myaccount">My Account</router-link>
                 </div>
             </transition>
         <div id = "content">
