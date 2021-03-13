@@ -49,6 +49,11 @@ const routes = [
                 component: () => import('@/components/Login.vue'),
                 meta: {title:'Login'},
             },
+            {
+                path:'RequestForm',
+                component: () => import('@/components/RequestForm.vue'),
+                meta: {title:'RequestForm'},
+            },
         ]
     }
 ]
