@@ -3,8 +3,8 @@
         <div id="topBox">
             <div id="mapBox">
             <GmapMap
-                :center="{lat:coordinates.lat, lng:coordinates.lng}"
-                :zoom="15"
+                :center="{lat:14.590634, lng:120.978764}"
+                :zoom="18"
                 map-type-id="terrain"
                 style="width: 500px; height: 400px"
             >
@@ -47,7 +47,7 @@ export default {
 #body{
     #topBox{
         //width:100%;
-        //height:300px;
+        //height:300px;                :center="{lat:coordinates.lat, lng:coordinates.lng}"
         width:100%;
         height:400px;
         display:flex;
