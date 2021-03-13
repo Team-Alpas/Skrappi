@@ -1,8 +1,23 @@
 <template>
-    <div id="topBox">
-        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
-        <h2>{{formatText}}</h2> 
-        <h3>Request</h3>
+    <div id="body">
+        <div id="topBox">
+            <div id="mapBox">
+            <GmapMap
+                :center="{lat:coordinates.lat, lng:coordinates.lng}"
+                :zoom="15"
+                map-type-id="terrain"
+                style="width: 500px; height: 400px"
+            >
+            </GmapMap>
+            </div>
+            <div id="formBox">
+                <input type='text' id='inForm' name='itemName' placeholder='Item Name'><br>
+                <input type='text' id='inForm' name='itemDesc' placeholder='Item Description'><br>
+                <input type='text' id='inForm' name='Quantity' placeholder='Quantity'><br>
+                <input type='text' id='inForm' name='location' placeholder='Your Location'><br>
+            </div>
+        </div>
+        <img id="wave" alt="wave" src="../assets/wave.png">
     </div>
 </template>
 
@@ -12,70 +27,49 @@ export default {
     data(){
         return{
             formatText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-
+            coordinates:{
+                lat:0,
+                lng:0,
+            }
         }
+    },
+    created() {
+        this.$getLocation({})
+            .then(coordinates => {
+                this.coordinates = coordinates;
+            });
     }
 }
 </script>
 
 <style lang="scss" scoped>
-#topBox{
-    width:100%;
-    height:300px;
-    position: relative;
-    z-index: 1;
-    h1{
-        position:absolute;
-        text-align:left;
-        width: 30%;
-        height: 100px;
-        font-family: Arial;
-        font-style: normal;
-        font-weight: 500;
-        font-size: calc(10px + 1vw);
-        line-height: calc(15px + 1vw);
-        color: #4dd964;
-        top:70px;
-        left:20%;
-        margin:auto;
+#body{
+    #topBox{
+        //width:100%;
+        //height:300px;
+        width:100%;
+        height:400px;
+        display:flex;
+        margin-top:40px;
+        padding-top:20px;
+        background-color: #a8d44c;
+        #mapBox{
+            margin: auto;
+        }
+        #formBox{
+            width:25%;
+            height:300px;
+            top:70px;
+            right:20%;
+            #inForm{
+                padding:5%;
+                min-width: 100px;
+                max-width: 100vw;
+            }
+        }
     }
-    h2{
-        position:absolute;
-        text-align:left;
-        width: 30%;
-        height: 75px;
-        font-family: Arial;
-        font-style: normal;
-        font-weight: 500;
-        font-size: calc(1px + 1vw);
-        line-height: calc(1px + 1vw);
-        color: gray;
-        top:calc(130px + 1vw);
-        left:20%;
-        margin:auto;
-    }
-    h3{
-        position:absolute;
-        text-align: center;
-        width:25%;
-        height:30px;
-        font-family: Arial;
-        font-style: normal;
-        font-weight: 500;
-        font-size: calc(10px + 1vw);
-        color: #4dd964;
-        top:calc(140px + 5vw);
-        left:20%;
-        border-radius: 30px;
-        padding:calc(1px + 1vw);
-        border-color:#4dd964;
-        border-style: solid;
-        border-width: thin;       
-        &:hover {
-            transition: 0.3s ease-in-out;
-            background: #4dd964;
-            color:white;
-        }     
+    img{
+        width:100%;
     }
 }
 </style>
