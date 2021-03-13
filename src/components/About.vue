@@ -113,8 +113,8 @@ h1{
     
     img{
         border-radius: 1rem;
-        height: 30rem;
-        width: 30rem;
+        height: 25rem;
+        width: 24rem;
         object-fit: cover;
         
     }
