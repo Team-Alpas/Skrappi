@@ -1,11 +1,6 @@
 <template>
     <div id="homeBox">
         <img id="logo" alt="skrappi logo" src="../assets/skrappi.png">
-        <div class="search-box">
-            <a class="search-btn" href="#"><i class="fas fa-search fa-lg"></i></a>
-            <input class="search-txt" type="text" name="" placeholder="Looking for a place to Donate?">
-            <a class="caret-down-btn" href="#"><i class="fas fa-caret-down fa-lg"></i></a>
-        </div>
         
         <!--<div class="containertop">
             <svg viewBox="0 0 500 130" preserveAspectRatio="xMinYMin meet" >
@@ -20,6 +15,11 @@
         </div>-->
         <div id="container">
             <img id="wavehello" src="../assets/wavehello.png">
+            <div class="search-box">
+                <a class="search-btn" href="#"><i class="fas fa-search fa-lg"></i></a>
+                <input class="search-txt" type="text" name="" placeholder="Looking for a place to Donate?">
+                <a class="caret-down-btn" href="#"><i class="fas fa-caret-down fa-lg"></i></a>
+            </div>
             <div id="infoBox1">
                 <h1>{{hMessage}}</h1>
                 <h2>{{hDesc1}}</h2>
@@ -74,56 +74,54 @@ export default {
         text-align: center;
         color:black;
     }
-    .search-box {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        background: white;
-        height: 24px;
-        padding: 10px;
-        border-radius: 10px;
-        border-color:gray;
-        border-style: solid;
-        border-width: thin;
-        min-width: 300px;
-        max-width:30%;
-        margin:auto;
-        &:hover {
-            transition: 0.3s ease-in-out;
-            background: #bfe192;
-            .search-btn {
-                transition: 0.3s ease-in-out;
-                color: white
-            }
-            .caret-down-btn {
-                transition: 0.3s ease-in-out;
-                color: white
-            }
-        }
-    }
-    .search-btn {
-        color: #95d458;
-        margin: 0px 10px;
-    }
-    .search-txt {
-        border: none;
-        background: none;
-        outline: none;
-        padding: 0;
-        color: #404040;
-        font-size: 100%;
-        transition: 0.4s;
-        line-height: 20px;
-        width: 100%;
-    }
-    .caret-down-btn {
-        color: #95d458;
-        float: right;
-        margin-right: 10px;
-    }
     #container {
         position: relative; 
-
+        .search-box {
+            position:absolute;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            background: white;
+            height: 24px;
+            padding: 10px;
+            border-radius: 10px;
+            border-color:gray;
+            border-style: solid;
+            border-width: thin;
+            min-width: 300px;
+            max-width:30%;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            text-align: center;
+            &:hover {
+                transition: 0.3s ease-in-out;
+                background: #bfe192;
+        }
+        }
+        .search-btn {
+            color: #95d458;
+            margin: 0px 10px;
+            &:hover { color: white; }
+        }
+        .search-txt {
+            border: none;
+            background: none;
+            outline: none;
+            padding: 0;
+            color: #404040;
+            font-size: 100%;
+            transition: 0.4s;
+            line-height: 20px;
+            width: 100%;
+        }
+        .caret-down-btn {
+            color: #95d458;
+            float: right;
+            margin-right: 10px;
+            &:hover { color: white; }
+        }
     }
     #infoBox1{
         position:absolute;
