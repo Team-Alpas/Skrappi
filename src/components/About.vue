@@ -1,4 +1,4 @@
-<template>
+  <template>
     <div>
         <p>Buy and Sell</p>
     </div>
@@ -11,6 +11,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>
-
