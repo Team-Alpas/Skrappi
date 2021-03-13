@@ -22,9 +22,9 @@ export default {
 <style lang="scss" scoped>
 #topBox{
     width:100%;
-    height:300px;
+    height:400px;
     position: relative;
-    z-index: 1;
+    top:30px;
     h1{
         position:absolute;
         text-align:left;
@@ -37,7 +37,7 @@ export default {
         line-height: calc(15px + 1vw);
         color: #4dd964;
         top:70px;
-        left:20%;
+        left:22%;
         margin:auto;
     }
     h2{
@@ -52,7 +52,7 @@ export default {
         line-height: calc(1px + 1vw);
         color: gray;
         top:calc(130px + 1vw);
-        left:20%;
+        left:22%;
         margin:auto;
     }
     h3{
@@ -66,7 +66,7 @@ export default {
         font-size: calc(10px + 1vw);
         color: #4dd964;
         top:calc(140px + 5vw);
-        left:20%;
+        left:22%;
         border-radius: 30px;
         padding:calc(1px + 1vw);
         border-color:#4dd964;
