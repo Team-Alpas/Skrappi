@@ -2,14 +2,13 @@
     <div id="topBox">
         <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
         <h2>{{formatText}}</h2> 
-        <router-link id="link" to="/RequestForm"><h3>Request</h3></router-link>
-        <i class="fas fa-hands-helping"></i>
+        <h3>Request</h3>
     </div>
 </template>
 
 <script>
 export default {
-    name:'Request',
+    name:'RequestForm',
     data(){
         return{
             formatText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -77,16 +76,6 @@ export default {
             background: #4dd964;
             color:white;
         }     
-    }
-    i{
-        position:absolute;
-        width:25%;
-        height:300px;
-        font-size:calc(80px + 10vw);
-        top:70px;
-        right:20%;
-        color:#4dd964;
-        
     }
 }
 </style>
