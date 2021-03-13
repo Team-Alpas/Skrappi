@@ -11,9 +11,10 @@ export default {
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700&display=swap');
 #app {
-  font-family: 'Kanit', Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Kanit', 'Avenir', Helvetica, Arial, sans-serif, 'Ranchers', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
