@@ -12,7 +12,7 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
 #app {
   font-family: 'Kanit', Avenir, Helvetica, Arial, sans-serif,'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
