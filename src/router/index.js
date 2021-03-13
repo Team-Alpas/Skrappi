@@ -54,13 +54,13 @@ const routes = [
                 component: () => import('@/components/RequestForm.vue'),
                 meta: {title:'RequestForm'},
             },
-            /*
+            
             {
                 path:'myaccount',
                 component: () => import('@/components/myaccount.vue'),
                 meta: {title:'myaccount'},
             },
-            */
+            
         ]
     }
 ]
