@@ -36,6 +36,7 @@ export default {
 #signup_txt{
     p{
         font-size: 2.5rem;
+        color:#4dd964;
     }
 }
 
@@ -62,7 +63,7 @@ input{
 
 
 button {
-  background-color: #18A0FB;
+  background-color: #4dd964;
   border: none;
   color: white;
   padding: 15px 32px;

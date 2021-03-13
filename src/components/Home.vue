@@ -1,11 +1,6 @@
 <template>
     <div id="homeBox">
         <img id="logo" alt="skrappi logo" src="../assets/skrappi.png">
-        <div class="search-box">
-            <a class="search-btn" href="#"><i class="fas fa-search fa-lg"></i></a>
-            <input class="search-txt" type="text" name="" placeholder="Looking for a place to Donate?">
-            <a class="caret-down-btn" href="#"><i class="fas fa-caret-down fa-lg"></i></a>
-        </div>
         
         <!--<div class="containertop">
             <svg viewBox="0 0 500 130" preserveAspectRatio="xMinYMin meet" >
@@ -20,23 +15,39 @@
         </div>-->
         <div id="container">
             <img id="wavehello" src="../assets/wavehello.png">
+            <div class="search-box">
+                <a class="search-btn" href="#"><i class="fas fa-search fa-lg"></i></a>
+                <input class="search-txt" type="text" name="" placeholder="Looking for a place to Donate?">
+                <a class="caret-down-btn" href="#"><i class="fas fa-caret-down fa-lg"></i></a>
+            </div>
             <div id="infoBox1">
                 <h1>{{hMessage}}</h1>
                 <h2>{{hDesc1}}</h2>
                 <h2>{{hDesc2}}</h2>
             </div>
             <img id="donateimg" src="../assets/donate.png">
+            <img id="wavehello2" src="../assets/wavehello.png">
+            <div id="infoBox2">
+                <h1>REQUEST</h1>
+                <h2>{{hDesc1}}</h2>
+                <h2>{{hDesc2}}</h2>
+            </div>
+            <img id="request" src="../assets/request.png">
+            <div id="infoBox3">
+                <h1>EXCHANGE</h1>
+                <h2>{{hDesc1}}</h2>
+                <h2>{{hDesc2}}</h2>
+            </div>
+            <img id="exchange" src="../assets/exchange.png">
+            <div id="footer">
+            </div>
         </div>
         <!--<img id="wave" alt="wave1" src="../assets/wavehello.png">-->
-        <div id="infoBox2">
-        </div>
-        <div id="infoBox3">
-        </div>
+
+        /*
         <div id="infoBox4">
         </div>
         <div id="infoBox5">
-        </div>
-        <div id="footer">
         </div>
     </div>
 </template>
@@ -74,65 +85,16 @@ export default {
         text-align: center;
         color:black;
     }
-    .search-box {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        background: white;
-        height: 24px;
-        padding: 10px;
-        border-radius: 10px;
-        border-color:gray;
-        border-style: solid;
-        border-width: thin;
-        min-width: 300px;
-        max-width:30%;
-        margin:auto;
-        &:hover {
-            transition: 0.3s ease-in-out;
-            background: #bfe192;
-            .search-btn {
-                transition: 0.3s ease-in-out;
-                color: white
-            }
-            .caret-down-btn {
-                transition: 0.3s ease-in-out;
-                color: white
-            }
-        }
-    }
-    .search-btn {
-        color: #95d458;
-        margin: 0px 10px;
-    }
-    .search-txt {
-        border: none;
-        background: none;
-        outline: none;
-        padding: 0;
-        color: #404040;
-        font-size: 100%;
-        transition: 0.4s;
-        line-height: 20px;
-        width: 100%;
-    }
-    .caret-down-btn {
-        color: #95d458;
-        float: right;
-        margin-right: 10px;
-    }
     #container {
         position: relative; 
-
-    }
-    #infoBox1{
-        position:absolute;
-        top: 84px;
-        left: 110px;
-        float:left;
-        height:450px;
-        text-align: center;
-        margin-top: 0%;
+        #infoBox1{
+            position:absolute;
+            top: 84px;
+            left: 110px;
+            float:left;
+            height:450px;
+            text-align: center;
+            margin-top: 0%;
         h1{
             width: 321.92px;
             height: 104.73px;
@@ -146,14 +108,122 @@ export default {
         h2{
             color:white;
         }
-    }
-    #wavehello{
-        position:absolute;
-        width: 100%;
-        min-width:50%;
-        height: 821px;
-        left: 0px;
-        top: -100px;
+        }
+        #wavehello{
+            position:absolute;
+            width: 100%;
+            min-width:50%;
+            height: 821px;
+            left: 0px;
+            top: -100px;
+        }
+        #wavehello2{
+            position:absolute;
+            width: 100%;
+            min-width:50%;
+            height: 821px;
+            left: 0px;
+            top: 1000px;
+        }
+
+        #infoBox2{
+            position:absolute;
+            top: 200px;
+            left: 50%;
+            height:450px;
+            text-align: center;
+            margin-top: 500px;     
+            h1{
+                width: 321.92px;
+                height: 104.73px;
+                font-family: Arial;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 72px;
+                line-height: 108px;
+                color:#95d458;
+            }
+            h2{
+                color:#95d458;
+            }
+        }
+        #infoBox3{
+            position:absolute;
+            top: 750px;
+            left: 5%;
+            height:450px;
+            text-align: center;
+            margin-top: 500px;     
+            h1{
+                width: 321.92px;
+                height: 104.73px;
+                font-family: Arial;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 72px;
+                line-height: 108px;
+                color:white;
+            }
+            h2{
+                color:white;
+            }
+        }
+        #footer{
+            position: absolute;
+            top: 2300px;
+            height:350px;
+            width:100%;
+            text-align:center;
+            background-color: #a2d74a;
+        }
+
+        .search-box {
+            position:absolute;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            background: white;
+            height: 24px;
+            padding: 10px;
+            border-radius: 10px;
+            border-color:gray;
+            border-style: solid;
+            border-width: thin;
+            min-width: 300px;
+            max-width:30%;
+            margin-left: auto;
+            margin-right: auto; //hi
+            left: 0;
+            right: 0;
+            text-align: center;
+            &:hover {
+                transition: 0.3s ease-in-out;
+                background: #bfe192;
+        }
+        }
+        .search-btn {
+            color: #95d458;
+            margin: 0px 10px;
+            &:hover { color: white; }
+        }
+        .search-txt {
+            border: none;
+            background: none;
+            outline: none;
+            padding: 0;
+            color: #404040;
+            font-size: 100%;
+            transition: 0.4s;
+            line-height: 20px;
+            width: 100%;
+        }
+        .caret-down-btn {
+            color: #95d458;
+            float: right;
+            margin-right: 10px;
+            &:hover { color: white; }
+        }
+
     }
 
     #donateimg{
@@ -162,6 +232,19 @@ export default {
         top: 0px;
         left: 953.1px;
         transform: rotate(16.17deg);
+    }
+    #request{
+        position:absolute;
+        float:left;
+        top: 600px;
+        width:700px;
+        right: 1100px;
+    }
+    #exchange{
+        position:absolute;
+        float:right;
+        top: 1100px;
+        left: 953.1px;
     }
     /*Wave on the infoBox1, super dirty code
     svg {
@@ -183,28 +266,39 @@ export default {
         vertical-align: middle;
         overflow: hidden;
     }*/
-    
-
-    /*#infoBox2{
-        background-color: white;
-        height:450px;
-    }
+    /*
     #infoBox3{
-        background-color: #f8f8f8;
+        position:absolute;
+        top: 84px;
+        left: 110px;
+        float:left;
         height:450px;
+        text-align: center;
+        margin-top: 0%;
     }
     #infoBox4{
-        background-color: white;
+        position:absolute;
+        top: 84px;
+        left: 110px;
+        float:left;
         height:450px;
+        text-align: center;
+        margin-top: 0%;
     }
     #infoBox5{
-        background-color: #f8f8f8;
+        position:absolute;
+        top: 84px;
+        left: 110px;
+        float:left;
         height:450px;
+        text-align: center;
+        margin-top: 0%;
     }
     #footer{
         background-color: #a2d74a;
         height:350px;
-    }*/
+    }
+    */
 }
 </style>
 

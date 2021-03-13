@@ -98,7 +98,7 @@ a { text-decoration: none; }
         margin-left:auto;
         margin-right:0;
         i{
-            background-color: #a2d74a;
+            background-color: #4dd964;
             padding: 20px;
             color:white;
         }
@@ -118,7 +118,7 @@ opacity: 0;
 #sideBar{
     float:right;
     display:grid;
-    background-color: #a2d74a;
+    background-color: #4dd964;
     width:100%;
     #link{
         padding:3%;
