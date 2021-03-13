@@ -15,7 +15,7 @@
 
         </form>
         </div>
-        <p> Already have an account? Log in(should be hyperlink)</p>
+        <p> Already have an account? <router-link  id="link" to="/Login">Login</router-link></p>
         <button>Register</button>
         
     </div>
@@ -31,7 +31,7 @@ export default {
 
 
 #body{
-    margin-left: 15%;
+    padding-left: 15%;
 }
 #signup_txt{
     p{
@@ -44,8 +44,9 @@ export default {
         margin-top: 0.75rem;
         margin-bottom: 0.75rem;
         width:35%;
-        padding: 2% 5%;
+        padding: 1.5%;
         box-sizing: border-box;
+        font-size: 1.75rem;
     }
     
 }
@@ -53,8 +54,10 @@ input{
         margin-top: 0.75rem;
         margin-bottom: 0.75rem;
         width:80%;
-        padding: 2% 5%;
+        padding: 1.5%;
         box-sizing: border-box;
+        font-size: 1.75rem;
+        
     }
 
 
@@ -67,5 +70,6 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  margin-bottom: 4%;
 }
 </style>
