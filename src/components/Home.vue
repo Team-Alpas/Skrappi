@@ -91,7 +91,7 @@ export default {
             min-width: 300px;
             max-width:30%;
             margin-left: auto;
-            margin-right: auto;
+            margin-right: auto; //hi
             left: 0;
             right: 0;
             text-align: center;
