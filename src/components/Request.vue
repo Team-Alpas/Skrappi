@@ -33,7 +33,7 @@ export default {
         font-weight: 500;
         font-size: calc(10px + 1vw);
         line-height: calc(15px + 1vw);
-        color: #95d458;
+        color: #4dd964;
         top:70px;
         left:20%;
         margin:auto;
@@ -48,7 +48,7 @@ export default {
         font-weight: 500;
         font-size: calc(1px + 1vw);
         line-height: calc(1px + 1vw);
-        color: #95d458;
+        color: gray;
         top:calc(130px + 1vw);
         left:20%;
         margin:auto;
@@ -62,17 +62,17 @@ export default {
         font-style: normal;
         font-weight: 500;
         font-size: calc(10px + 1vw);
-        color: #95d458;
+        color: #4dd964;
         top:calc(140px + 5vw);
         left:20%;
         border-radius: 30px;
         padding:calc(1px + 1vw);
-        border-color:#95d458;
+        border-color:#4dd964;
         border-style: solid;
         border-width: thin;       
         &:hover {
             transition: 0.3s ease-in-out;
-            background: #95d458;
+            background: #4dd964;
             color:white;
         }     
     }
