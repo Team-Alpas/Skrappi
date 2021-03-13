@@ -26,17 +26,26 @@
                 <h2>{{hDesc2}}</h2>
             </div>
             <img id="donateimg" src="../assets/donate.png">
+            <img id="wavehello2" src="../assets/wavehello.png">
+            <div id="infoBox2">
+                <h1>REQUEST</h1>
+                <h2>{{hDesc1}}</h2>
+                <h2>{{hDesc2}}</h2>
+            </div>
+            <div id="infoBox3">
+                <h1>EXCHANGE</h1>
+                <h2>{{hDesc1}}</h2>
+                <h2>{{hDesc2}}</h2>
+            </div>
+            <div id="footer">
+            </div>
         </div>
         <!--<img id="wave" alt="wave1" src="../assets/wavehello.png">-->
-        <div id="infoBox2">
-        </div>
-        <div id="infoBox3">
-        </div>
+
+        /*
         <div id="infoBox4">
         </div>
         <div id="infoBox5">
-        </div>
-        <div id="footer">
         </div>
     </div>
 </template>
@@ -76,6 +85,96 @@ export default {
     }
     #container {
         position: relative; 
+        #infoBox1{
+            position:absolute;
+            top: 84px;
+            left: 110px;
+            float:left;
+            height:450px;
+            text-align: center;
+            margin-top: 0%;
+        h1{
+            width: 321.92px;
+            height: 104.73px;
+            font-family: Arial;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 72px;
+            line-height: 108px;
+            color: #FFFFFF;
+        }
+        h2{
+            color:white;
+        }
+        }
+        #wavehello{
+            position:absolute;
+            width: 100%;
+            min-width:50%;
+            height: 821px;
+            left: 0px;
+            top: -100px;
+        }
+        #wavehello2{
+            position:absolute;
+            width: 100%;
+            min-width:50%;
+            height: 821px;
+            left: 0px;
+            top: 1000px;
+        }
+
+        #infoBox2{
+            position:absolute;
+            top: 200px;
+            left: 50%;
+            height:450px;
+            text-align: center;
+            margin-top: 500px;     
+            h1{
+                width: 321.92px;
+                height: 104.73px;
+                font-family: Arial;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 72px;
+                line-height: 108px;
+                color:#95d458;
+            }
+            h2{
+                color:#95d458;
+            }
+        }
+        #infoBox3{
+            position:absolute;
+            top: 750px;
+            left: 5%;
+            height:450px;
+            text-align: center;
+            margin-top: 500px;     
+            h1{
+                width: 321.92px;
+                height: 104.73px;
+                font-family: Arial;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 72px;
+                line-height: 108px;
+                color:white;
+            }
+            h2{
+                color:white;
+            }
+        }
+        #footer{
+            position: absolute;
+            top: 2300px;
+            height:350px;
+            width:100%;
+            text-align:center;
+            background-color: #a2d74a;
+        }
+
         .search-box {
             position:absolute;
             display: flex;
@@ -122,36 +221,7 @@ export default {
             margin-right: 10px;
             &:hover { color: white; }
         }
-    }
-    #infoBox1{
-        position:absolute;
-        top: 84px;
-        left: 110px;
-        float:left;
-        height:450px;
-        text-align: center;
-        margin-top: 0%;
-        h1{
-            width: 321.92px;
-            height: 104.73px;
-            font-family: Arial;
-            font-style: normal;
-            font-weight: 800;
-            font-size: 72px;
-            line-height: 108px;
-            color: #FFFFFF;
-        }
-        h2{
-            color:white;
-        }
-    }
-    #wavehello{
-        position:absolute;
-        width: 100%;
-        min-width:50%;
-        height: 821px;
-        left: 0px;
-        top: -100px;
+
     }
 
     #donateimg{
@@ -181,28 +251,39 @@ export default {
         vertical-align: middle;
         overflow: hidden;
     }*/
-    
-
-    /*#infoBox2{
-        background-color: white;
-        height:450px;
-    }
+    /*
     #infoBox3{
-        background-color: #f8f8f8;
+        position:absolute;
+        top: 84px;
+        left: 110px;
+        float:left;
         height:450px;
+        text-align: center;
+        margin-top: 0%;
     }
     #infoBox4{
-        background-color: white;
+        position:absolute;
+        top: 84px;
+        left: 110px;
+        float:left;
         height:450px;
+        text-align: center;
+        margin-top: 0%;
     }
     #infoBox5{
-        background-color: #f8f8f8;
+        position:absolute;
+        top: 84px;
+        left: 110px;
+        float:left;
         height:450px;
+        text-align: center;
+        margin-top: 0%;
     }
     #footer{
         background-color: #a2d74a;
         height:350px;
-    }*/
+    }
+    */
 }
 </style>
 
