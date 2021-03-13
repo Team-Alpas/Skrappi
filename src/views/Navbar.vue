@@ -6,16 +6,16 @@
             </div>
             <div id = "links">
                 <div id = "linkBox">
-                    <router-link v-if="mobileView >=600" id="link" to="/Donate">Donate</router-link>
-                    <router-link v-if="mobileView >=600" id="link" to="/Request">Request</router-link>
-                    <router-link v-if="mobileView >=600" id="link" to="/FAQ">FAQ</router-link>
-                    <router-link v-if="mobileView >=600" id="link" to="/About">About</router-link>
-                    <router-link v-if="mobileView >=600" id="link" to="/Login">Login</router-link>
-                    <router-link v-if="mobileView >=600" id="link" to="/signup">Sign Up</router-link>
+                    <router-link v-if="mobileView >=650" id="link" to="/Donate">Donate</router-link>
+                    <router-link v-if="mobileView >=650" id="link" to="/Request">Request</router-link>
+                    <router-link v-if="mobileView >=650" id="link" to="/FAQ">FAQ</router-link>
+                    <router-link v-if="mobileView >=650" id="link" to="/About">About</router-link>
+                    <router-link v-if="mobileView >=650" id="link" to="/Login">Login</router-link>
+                    <router-link v-if="mobileView >=650" id="link" to="/signup">Sign Up</router-link>
                 </div>
             </div>
             <div id = "barBox">
-            <i v-if="mobileView < 600" button @click="sideShow = !sideShow" class="fa fa-bars"></i>
+            <i v-if="mobileView < 650" button @click="sideShow = !sideShow" class="fa fa-bars"></i>
             </div>
         </div>
             <transition name="slide-fade">
