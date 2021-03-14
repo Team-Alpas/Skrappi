@@ -9,7 +9,7 @@
                     <p>Donating recyclable items to those that need it will not <br>only help them, but also the environment. So donate now!</p>
                     <div class="search-box">
                         <a class="search-btn" href="#"><i class="fas fa-search fa-lg"></i></a>
-                            <input class="search-txt" type="text" name="" placeholder="Search requests near you.">
+                            <input v-on:keyup.enter="swtch=!swtch" class="search-txt" type="text" name="" placeholder="Search requests near you." v-model="defaultSearch">
                         <a class="caret-down-btn" href="#"><i class="fas fa-caret-down fa-lg"></i></a>
                     </div>
                 </div>
@@ -20,7 +20,64 @@
                 <div class="cardheader">
                     <h1>Requests Listing</h1>
                 </div>
-                <div class="cardbody">
+                <div class="cardbody" v-if="!swtch">
+                    <div class="card">
+                        <div id="icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <div class="cardtext">
+                            <h1>Coke Can</h1>
+                        </div>
+                        <div style="text-align:center;color:#333C1A">
+                            <h2>500m away</h2>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <div class="cardtext">
+                            <h1>Soda Can</h1>
+                        </div>
+                        <div style="text-align:center;color:#333C1A">
+                            <h2>600m away</h2>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <div class="cardtext">
+                            <h1>Tin Can</h1>
+                        </div>
+                        <div style="text-align:center;color:#333C1A">
+                            <h2>1km away</h2>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <div class="cardtext">
+                            <h1>Juice Can</h1>
+                        </div>
+                        <div style="text-align:center;color:#333C1A">
+                            <h2>3km away</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardbody" v-if="swtch">
+                    <router-link id="link" to="/DonatePage"><div id="SpecialCard" class="card">
+                        <div id="icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <div class="cardtext">
+                            <h1>Plastic Bottles</h1>
+                        </div>
+                        <div style="text-align:center;color:#333C1A">
+                            <h2>500m away</h2>
+                        </div>
+                    </div></router-link>
                     <div class="card">
                         <div id="icon">
                             <i class="fas fa-exclamation-circle"></i>
@@ -29,7 +86,7 @@
                             <h1>Water Bottles</h1>
                         </div>
                         <div style="text-align:center;color:#333C1A">
-                            <h2>2km away</h2>
+                            <h2>690m away</h2>
                         </div>
                     </div>
                     <div class="card">
@@ -37,10 +94,10 @@
                             <i class="fas fa-exclamation-circle"></i>
                         </div>
                         <div class="cardtext">
-                            <h1>Newspapers</h1>
+                            <h1>Coke Bottles</h1>
                         </div>
                         <div style="text-align:center;color:#333C1A">
-                            <h2>69km away</h2>
+                            <h2>1km away</h2>
                         </div>
                     </div>
                     <div class="card">
@@ -48,21 +105,10 @@
                             <i class="fas fa-exclamation-circle"></i>
                         </div>
                         <div class="cardtext">
-                            <h1>Plastic Cups</h1>
+                            <h1>Mountain Dew Bottles</h1>
                         </div>
                         <div style="text-align:center;color:#333C1A">
-                            <h2>420km away</h2>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div id="icon">
-                            <i class="fas fa-exclamation-circle"></i>
-                        </div>
-                        <div class="cardtext">
-                            <h1>Broken Television</h1>
-                        </div>
-                        <div style="text-align:center;color:#333C1A">
-                            <h2>3m away</h2>
+                            <h2>1.2km away</h2>
                         </div>
                     </div>
                 </div>
@@ -74,6 +120,17 @@
 <script>
     export default {
         name:'Donate',
+    data(){
+        return{
+            defaultSearch:"Can",
+            swtch:false,
+        }
+    },
+    methods:{
+        redirectPage(){
+            window.location.href = 'http://localhost:8080/#/Donate'
+        }
+    }
     }
 </script>
 
@@ -145,16 +202,6 @@
                 left: 0;
                 right: 0;
                 text-align: center;
-                &:hover {
-                    transition: 0.3s ease-in-out;
-                    background: #bfe192;
-                    .search-btn{
-                        color:white;
-                    }
-                    .caret-down-btn {
-                        color:white;
-                    }
-                }
             }
             .search-btn {
                 color: #70D1AC;
@@ -175,7 +222,6 @@
                 color: #70D1AC;
                 float: right;
                 margin-right: 10px;
-                &:hover { color: white; }
             }
         }
         &::after{
@@ -206,6 +252,11 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-gap: 0 20px;
+        }
+        #SpecialCard{
+            &:hover{
+                color:gray;
+            }
         }
         .card{
             font-family: inherit;

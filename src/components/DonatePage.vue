@@ -20,7 +20,7 @@
             </div>
             <div id="formBox">    
                 <div id="descBox">
-                    <h1>Plastic Bottle</h1>
+                    <h1>Plastic Bottles</h1>
                     <h2>Item Description</h2>
                     <p>Need it for a school project</p>
                     <h2>Quantity</h2>
@@ -28,7 +28,7 @@
                     <h2>Location</h2>
                     <p>Suntrust Parkview</p>
                 </div>     
-                <router-link  id="link" to="/RequestAccepted"><h3>Message</h3></router-link>
+                <router-link  id="link" to="/Message"><h3>Message</h3></router-link>
             </div>
         </div>
         <img id="wave" alt="wave" src="../assets/wave.png">

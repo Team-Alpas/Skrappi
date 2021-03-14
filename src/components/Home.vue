@@ -17,7 +17,7 @@
             <img id="wavehello" src="../assets/wavehello.png">
             <div class="search-box">
                 <a class="search-btn" href="#"><i class="fas fa-search fa-lg"></i></a>
-                <input v-on:keyup.enter="redirectPage" class="search-txt" type="text" name="" placeholder="Have somehting to Donate?">
+                <input v-on:keyup.enter="redirectPage" class="search-txt" type="text" name="" placeholder="Have something to Donate?">
                 <a class="caret-down-btn" href="#"><i class="fas fa-caret-down fa-lg"></i></a>
             </div>
             <div id="infoBox1">
