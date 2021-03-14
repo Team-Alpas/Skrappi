@@ -42,23 +42,23 @@
             <img id="exchange" src="../assets/ha.png">
             
             <div id="footer">
-                
+                <div id='icons'>
+                    <i id="disIcon" class="fab fa-discord"></i>
+                    <i id="Icon" class="fab fa-mail"></i>
+                    <i id="Icon" class="fab fa-facebook"></i>
+                    <i id="Icon" class="fab fa-twitter"></i>
+                    <i id="Icon" class="fab fa-instagram"></i>
+                    <i id="Icon" class="fab fa-linkedin"></i>
+                </div>         
             </div>
         </div>
         <!--<img id="wave" alt="wave1" src="../assets/wavehello.png">-->
 
         
         <div id="infoBox4">
+
         </div>
         <div id="infoBox5">
-        </div>
-        <div id='icons'>
-            <i id="disIcon" class="fab fa-discord"></i>
-            <i id="Icon" class="fab fa-mail"></i>
-            <i id="Icon" class="fab fa-facebook"></i>
-            <i id="Icon" class="fab fa-twitter"></i>
-            <i id="Icon" class="fab fa-instagram"></i>
-            <i id="Icon" class="fab fa-linkedin"></i>
         </div>
     </div>
 </template>
@@ -186,11 +186,27 @@ export default {
         }
         #footer{
             position: absolute;
-            top: 2300px;
+            top: 1900px;
             height:350px;
             width:100%;
             text-align:center;
             background-color: #4dd964;
+            #icons{
+            margin-top:75px;
+            text-align: center; 
+            i{
+            color: white;
+            }
+            #disIcon{
+            padding:5px;
+            font-size:100px;
+            }
+            #Icon{
+            // /padding: 0 2.5rem;
+            padding:20px;
+            font-size:100px;
+            }
+            }
         }
 
         .search-box {
@@ -315,22 +331,6 @@ export default {
         height:350px;
     }
     */
-    #icons{
-        margin-top: 2000px;
-        text-align: center; 
-        i{
-            color: #4dd964
-        }
-        #disIcon{
-            padding:5px;
-            font-size:100px;
-        }
-        #Icon{
-            // /padding: 0 2.5rem;
-            padding:20px;
-            font-size:100px;
-        }
-    }
    
 }
 </style>
