@@ -22,32 +22,44 @@
             </div>
             <div id="infoBox1">
                 <h1>{{hMessage}}</h1>
-                <h2>{{hDesc1}}</h2>
-                <h2>{{hDesc2}}</h2>
+                <h2>Donate unused items to people, organizations,  and families to lend a helping hand to. </h2>
+                <h2>One man’s trash is another man’s treasure!</h2>
             </div>
             <img id="donateimg" src="../assets/donate.png">
             <img id="wavehello2" src="../assets/wavehello.png">
             <div id="infoBox2">
-                <h1>REQUEST</h1>
-                <h2>{{hDesc1}}</h2>
-                <h2>{{hDesc2}}</h2>
-            </div>
-            <img id="request" src="../assets/request.png">
-            <div id="infoBox3">
                 <h1>EXCHANGE</h1>
-                <h2>{{hDesc1}}</h2>
-                <h2>{{hDesc2}}</h2>
+                <h2>Swap items with people near you with the</h2>
+                <h2>same hobbies and interests.</h2>
             </div>
-            <img id="exchange" src="../assets/exchange.png">
+            <img id="request" src="../assets/exchange.png">
+            <div id="infoBox3">
+                <h1>REQUEST</h1>
+                <h2>Ask for anything you need and we’ll make sure that donators will see them!</h2>
+                <h2>donators will see them!</h2>
+                
+            </div>
+            <img id="exchange" src="../assets/ha.png">
+            
             <div id="footer">
+                
             </div>
         </div>
         <!--<img id="wave" alt="wave1" src="../assets/wavehello.png">-->
 
-        /*
+        
         <div id="infoBox4">
         </div>
         <div id="infoBox5">
+        </div>
+        <div id='icons'>
+            <img src='../assets/green_disc.png'>
+            <img src='../assets/green_github.png'>
+            <img src='../assets/green_mail.png'>
+            <img src='../assets/green_fb.png'>
+            <img src='../assets/green_twitter.png'>
+            <img src='../assets/green_ig.png'>
+            <img src='../assets/green_linkedin.png'>
         </div>
     </div>
 </template>
@@ -58,7 +70,7 @@ export default {
     data(){
         return{
             hMessage:"DONATE",
-            hDesc1:"Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+            hDesc1:"Donate unused items to people, organizations,  and families to lend a helping hand to. One man’s trash is another man’s treasure!",
             hDesc2:"sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             eDead:"November 15, 2020, 11:59PM",
             lDead:"November 22, 2020, 11:59PM"
@@ -244,7 +256,7 @@ export default {
         position:absolute;
         float:right;
         top: 1100px;
-        left: 953.1px;
+        left: 725px;
     }
     /*Wave on the infoBox1, super dirty code
     svg {
@@ -299,6 +311,14 @@ export default {
         height:350px;
     }
     */
+    #icons{
+        margin-top: 2000px;
+        text-align: center;
+        img{
+            padding: 0 2.5rem;
+        }
+    }
+   
 }
 </style>
 
