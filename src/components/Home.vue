@@ -72,7 +72,7 @@ export default {
             hDesc1:"Donate unused items to people, organizations,  and families to lend a helping hand to. One man’s trash is another man’s treasure!",
             hDesc2:"sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             eDead:"November 15, 2020, 11:59PM",
-            lDead:"November 22, 2020, 11:59PM"
+            lDead:"November 22, 2020, 11:59PM",
         }
     },
     methods:{
