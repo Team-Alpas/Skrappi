@@ -71,6 +71,16 @@ const routes = [
                 component: () => import('@/components/RequestAccepted.vue'),
                 meta: {title:'RequestAccepted'},
             },
+            {
+                path:'DonatePage',
+                component: () => import('@/components/DonatePage.vue'),
+                meta: {title:'DonatePage'},
+            },
+            {
+                path:'Message',
+                component: () => import('@/components/Message.vue'),
+                meta: {title:'Message'},
+            },
             
         ]
     }

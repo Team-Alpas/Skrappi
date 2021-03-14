@@ -18,18 +18,17 @@
             />
             </GmapMap>
             </div>
-            <div id="formBox">
-                <input type='text' id='inForm' name='itemName' placeholder='Item Name'><br>
-                <input type='text' id='inForm' name='itemDesc' placeholder='Item Description'><br>
-                <input type='text' id='inForm' name='Quantity' placeholder='Quantity'><br>
-                <input v-on:keyup.enter="onEnter" type='text' id='inForm' name='location' placeholder='Your Location' ><br>      
+            <div id="formBox">    
                 <div id="descBox">
                     <h1>Plastic Bottle</h1>
-                    <p id="desc">Need it for a school project</p>
-                    <p id="quant">50 Pieces</p>
-                    <p id="location">Suntrust Parkview</p>
+                    <h2>Item Description</h2>
+                    <p>Need it for a school project</p>
+                    <h2>Quantity</h2>
+                    <p>50 Pieces</p>
+                    <h2>Location</h2>
+                    <p>Suntrust Parkview</p>
                 </div>     
-                <router-link  id="link" to="/RequestAccepted"><h3>Post Request</h3></router-link>
+                <router-link  id="link" to="/RequestAccepted"><h3>Message</h3></router-link>
             </div>
         </div>
         <img id="wave" alt="wave" src="../assets/wave.png">
@@ -86,30 +85,33 @@ export default {
         //width:100%;
         //height:300px;                :center="{lat:coordinates.lat, lng:coordinates.lng}"
         width:100%;
-        height:400px;
+        height:600px;
         display:flex;
         margin-top:40px;
-
-        padding-top:20px;
         background-color: #4dd964;
         #mapBox{
             margin:auto;
+            margin-top:40px;
         }
         #formBox{
-            margin-right:35%;
-            #inForm{
-                width:300%;
-                height:30px;
-                border-radius: 5px;
-                border-color: transparent;
-                padding:5%;
-                min-width: 100px;
-                max-width: 100vw;
-                margin: 5%;
+            margin-top:40px;
+            margin-right:20%;
+            #descBox{
+                width:400px;
+                padding:2%;
+                background-color: white;
+                border-radius: 10px;
+                h2{
+                    color:#4dd964;
+                }
+                p{
+                    color:gray;
+                }
+
             }
             h3{
                 text-align: center;
-                width:100%;
+                width:50%;
                 height:20px;
                 font-family: Arial;
                 font-style: normal;
@@ -118,7 +120,6 @@ export default {
                 color: white;
                 margin-top: 5px;
                 border-radius: 20px;
-                margin-left:190%;
                 padding:calc(1px + 1vw);
                 border-color:white;
                 border-style: solid;
