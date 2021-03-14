@@ -50,7 +50,7 @@ export default {
         font-style: normal;
         font-weight: 500;
         font-size: calc(5px + 1vw);
-        line-height: calc(1px + 1vw);
+        line-height: calc(10px + 1vw);
         color: gray;
         top:calc(120px + 1vw);
         left:22%;
