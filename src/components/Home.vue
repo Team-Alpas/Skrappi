@@ -32,11 +32,13 @@
                 <h2>{{hDesc1}}</h2>
                 <h2>{{hDesc2}}</h2>
             </div>
+            <img id="request" src="../assets/request.png">
             <div id="infoBox3">
                 <h1>EXCHANGE</h1>
                 <h2>{{hDesc1}}</h2>
                 <h2>{{hDesc2}}</h2>
             </div>
+            <img id="exchange" src="../assets/exchange.png">
             <div id="footer">
             </div>
         </div>
@@ -230,6 +232,19 @@ export default {
         top: 0px;
         left: 953.1px;
         transform: rotate(16.17deg);
+    }
+    #request{
+        position:absolute;
+        float:left;
+        top: 600px;
+        width:700px;
+        right: 1100px;
+    }
+    #exchange{
+        position:absolute;
+        float:right;
+        top: 1100px;
+        left: 953.1px;
     }
     /*Wave on the infoBox1, super dirty code
     svg {

@@ -30,19 +30,20 @@ export default {
     padding-top: 2%;
     padding-bottom: 15%;
     min-height: 100%;
-    background-color:#66883F;
-    color: #efe1ba;
+    //background-color:#95d458;
+    color: #4dd964;
 }
 #login_txt{
     p{
         font-size: 2.5rem;
-        color: #EFE1BA;
+        color: #4dd964;
     }
 }
 
 input{
         margin-top: 0.75rem;
         margin-bottom: 0.75rem;
+        border-color: white;
         width:60%;
         padding: 1.5%;
         box-sizing: border-box;
@@ -51,7 +52,7 @@ input{
 
 
 button {
-  background-color: #4056A1;
+  background-color: #4dd964;
   border: none;
   color: white;
   padding: 15px 32px;

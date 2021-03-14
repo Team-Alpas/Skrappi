@@ -2,7 +2,8 @@
     <div id="topBox">
         <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
         <h2>{{formatText}}</h2> 
-        <h3>Request</h3>
+        <router-link id="link" to="/RequestForm"><h3>Request</h3></router-link>
+        <i class="fas fa-hands-helping"></i>
     </div>
 </template>
 
@@ -21,8 +22,9 @@ export default {
 <style lang="scss" scoped>
 #topBox{
     width:100%;
-    height:300px;
+    height:400px;
     position: relative;
+    top:30px;
     h1{
         position:absolute;
         text-align:left;
@@ -33,9 +35,9 @@ export default {
         font-weight: 500;
         font-size: calc(10px + 1vw);
         line-height: calc(15px + 1vw);
-        color: #95d458;
+        color: #4dd964;
         top:70px;
-        left:20%;
+        left:22%;
         margin:auto;
     }
     h2{
@@ -48,9 +50,9 @@ export default {
         font-weight: 500;
         font-size: calc(1px + 1vw);
         line-height: calc(1px + 1vw);
-        color: #95d458;
+        color: gray;
         top:calc(130px + 1vw);
-        left:20%;
+        left:22%;
         margin:auto;
     }
     h3{
@@ -62,19 +64,29 @@ export default {
         font-style: normal;
         font-weight: 500;
         font-size: calc(10px + 1vw);
-        color: #95d458;
+        color: #4dd964;
         top:calc(140px + 5vw);
-        left:20%;
+        left:22%;
         border-radius: 30px;
         padding:calc(1px + 1vw);
-        border-color:#95d458;
+        border-color:#4dd964;
         border-style: solid;
         border-width: thin;       
         &:hover {
             transition: 0.3s ease-in-out;
-            background: #95d458;
+            background: #4dd964;
             color:white;
         }     
+    }
+    i{
+        position:absolute;
+        width:25%;
+        height:300px;
+        font-size:calc(80px + 10vw);
+        top:70px;
+        right:20%;
+        color:#4dd964;
+        
     }
 }
 </style>

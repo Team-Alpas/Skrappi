@@ -12,6 +12,7 @@
                     <router-link v-if="mobileView >=650" id="link" to="/About">About</router-link>
                     <router-link v-if="mobileView >=650" id="link" to="/Login">Login</router-link>
                     <router-link v-if="mobileView >=650" id="link" to="/signup">Sign Up</router-link>
+                    <router-link v-if="mobileView >=650" id="link" to="/myaccount">My Account</router-link>
                 </div>
             </div>
             <div id = "barBox">
@@ -26,6 +27,7 @@
                 <router-link  id="link" to="/About">About</router-link>
                 <router-link  id="link" to="/Login">Login</router-link>
                 <router-link  id="link" to="/Sign Up">Sign Up</router-link>
+                <router-link  id="link" to="/myaccount">My Account</router-link>
                 </div>
             </transition>
         <div id = "content">
@@ -98,7 +100,7 @@ a { text-decoration: none; }
         margin-left:auto;
         margin-right:0;
         i{
-            background-color: #a2d74a;
+            background-color: #4dd964;
             padding: 20px;
             color:white;
         }
@@ -118,7 +120,7 @@ opacity: 0;
 #sideBar{
     float:right;
     display:grid;
-    background-color: #a2d74a;
+    background-color: #4dd964;
     width:100%;
     #link{
         padding:3%;
