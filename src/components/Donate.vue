@@ -9,7 +9,7 @@
                     <p>Donating recyclable items to others will not only help others <br>that need it, but also the environment. So donate now!</p>
                     <div class="search-box">
                         <a class="search-btn" href="#"><i class="fas fa-search fa-lg"></i></a>
-                        <input class="search-txt" type="text" name="" placeholder="Search requests near you.">
+                            <input class="search-txt" type="text" name="" placeholder="Search requests near you.">
                         <a class="caret-down-btn" href="#"><i class="fas fa-caret-down fa-lg"></i></a>
                     </div>
                 </div>
@@ -22,10 +22,47 @@
                 </div>
                 <div class="cardbody">
                     <div class="card">
-                        <i class="fa fa-exclamation-circle"></i>
-                        
+                        <div id="icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
                         <div class="cardtext">
                             <h1>Water Bottles</h1>
+                        </div>
+                        <div style="text-align:center;color:#333C1A">
+                            <h2>2km away</h2>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <div class="cardtext">
+                            <h1>Newspapers</h1>
+                        </div>
+                        <div style="text-align:center;color:#333C1A">
+                            <h2>69km away</h2>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <div class="cardtext">
+                            <h1>Plastic Cups</h1>
+                        </div>
+                        <div style="text-align:center;color:#333C1A">
+                            <h2>420km away</h2>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <div class="cardtext">
+                            <h1>Broken Television</h1>
+                        </div>
+                        <div style="text-align:center;color:#333C1A">
+                            <h2>3m away</h2>
                         </div>
                     </div>
                 </div>
@@ -111,12 +148,17 @@
                 &:hover {
                     transition: 0.3s ease-in-out;
                     background: #bfe192;
+                    .search-btn{
+                        color:white;
+                    }
+                    .caret-down-btn {
+                        color:white;
+                    }
                 }
             }
             .search-btn {
-                color: #95d458;
+                color: #70D1AC;
                 margin: 0px 10px;
-                &:hover { color: white; }
             }
             .search-txt {
                 border: none;
@@ -130,7 +172,7 @@
                 width: 100%;
             }
             .caret-down-btn {
-                color: #95d458;
+                color: #70D1AC;
                 float: right;
                 margin-right: 10px;
                 &:hover { color: white; }
@@ -176,9 +218,12 @@
             font-size: 12px;
             border-radius: 8px;
             display: grid;
-            grid-template-columns: 40px 1fr;
+            grid-template-columns: 20px 1fr 60px;
             background: #FFF;
-            color: #5a5a5a;
+            color: #70D1AC;
+        }
+        #icon{
+            font-size: 16px;
         }
     }
 </style>
