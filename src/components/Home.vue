@@ -228,15 +228,16 @@ export default {
             left: 0;
             right: 0;
             text-align: center;
+            /*
             &:hover {
                 transition: 0.3s ease-in-out;
                 background: #bfe192;
-        }
+        }*/
         }
         .search-btn {
             color: #95d458;
             margin: 0px 10px;
-            &:hover { color: white; }
+            //&:hover { color: white; }
         }
         .search-txt {
             border: none;
@@ -253,7 +254,7 @@ export default {
             color: #95d458;
             float: right;
             margin-right: 10px;
-            &:hover { color: white; }
+            //&:hover { color: white; }
         }
 
     }
