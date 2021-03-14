@@ -15,8 +15,8 @@
                     <router-link v-if="mobileView >=650" id="link" to="/myaccount">My Account</router-link>
                 </div>
             </div>
-            <div id = "barBox">
-            <i v-if="mobileView < 650" button @click="sideShow = !sideShow" class="fa fa-bars"></i>
+            <div id = "barBox" v-if="mobileView < 650">
+                <i button @click="sideShow = !sideShow" class="fa fa-bars"></i>
             </div>
         </div>
             <transition name="slide-fade">
@@ -67,6 +67,8 @@ a { text-decoration: none; }
     overflow:hidden;
     //background-color: aqua;
     display:flex;
+    justify-content: space-between;
+    flex: 1;
     #title{
         /*
         padding-left:2vw;
@@ -80,15 +82,15 @@ a { text-decoration: none; }
     #links{
         //margin-left: 1vw;
         //background-color: darkgrey;
-        width:100%;
-        margin: 1vw auto;
+        // width:100%;
+        // margin: 1px auto;
         padding-top:2%;
-        padding-left:40%;
+        //padding-left:40%;
         #linkBox{
             #link{
                 text-align: center;
-                padding: 50% 1vw;
-                font-size:calc(10px + 1vw);
+                padding: 50% 10px;
+                font-size:1.5rem;
                 color:gray;
                 &:hover{
                     color: #7ae06e;
