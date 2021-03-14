@@ -86,6 +86,7 @@ export default {
         height: 15rem;
         padding-bottom: 4rem;
         position: relative;
+        filter: drop-shadow(10px 10px 4px #353131);
     }
     
 }
@@ -112,8 +113,8 @@ h1{
     
     img{
         border-radius: 1rem;
-        height: 30rem;
-        width: 30rem;
+        height: 25rem;
+        width: 24rem;
         object-fit: cover;
         
     }
