@@ -2,19 +2,19 @@
     <div id='body'>
         <div id='panel'>
             <div id='prof_pic'>
-                <img src='../assets/mark_pagarigan_small.jpg'>
-                <h1>Mark Pagarigan</h1>
+                <img src='../assets/iyah_reyes.jpg'>
+                <h1>Iyah Dela Cruz</h1>
             <div class='categories donations'>
-                <h3>My donations</h3>
+                <h3>My Donations</h3>
             </div>
             <div class='categories charities'>
-                <h3>My charities</h3>
+                <h3>My Charities</h3>
             </div>
             <div class='categories requests'>
-                <h3>My requests</h3>
+                <h3>My Requests</h3>
             </div>
             <div class='categories ratings'>
-                <h3>My ratings</h3>
+                <h3>My Ratings</h3>
             </div>
             </div>
         </div>
@@ -85,9 +85,9 @@ export default {
 
 #panel{
     float: left;
-    height: 100%;
+    height: 800px;
     width: 25rem;
-    background-color: #AFCA90;
+    background-color: #4dd964;
 
 }
 
@@ -103,7 +103,7 @@ export default {
         text-align: center;
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
-        color: #E0E0E0;
+        color: white;
     }
 .categories{
     h3{
@@ -112,7 +112,7 @@ export default {
         color: #ffffff;
         margin-left: 2rem;
     }
-    border-top: 0.3rem solid #EFE1BA;
+    border-top: 0.3rem solid #4dd964;
 
 }  
 
@@ -125,7 +125,7 @@ export default {
     left: 1.75rem;
     
     h1{
-        color: #66883F;
+        color: #4dd964;
         text-decoration: underline;
     }
     #image_array{
@@ -139,7 +139,7 @@ export default {
 
     
     #container{
-        background-color: #7A8491;
+        background-color: #4dd964;
         border-radius: 2rem;
         width: 16rem;
         p{

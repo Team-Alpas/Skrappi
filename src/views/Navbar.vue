@@ -10,8 +10,8 @@
                     <router-link v-if="mobileView >=650" id="link" to="/Request">Request</router-link>
                     <router-link v-if="mobileView >=650" id="link" to="/FAQ">FAQ</router-link>
                     <router-link v-if="mobileView >=650" id="link" to="/About">About</router-link>
-                    <router-link v-if="mobileView >=650" id="link" to="/Login">Login</router-link>
-                    <router-link v-if="mobileView >=650" id="link" to="/signup">Sign Up</router-link>
+                    <!--<router-link v-if="mobileView >=650" id="link" to="/Login">Login</router-link>-->
+                    <!--<router-link v-if="mobileView >=650" id="link" to="/signup">Sign Up</router-link>-->
                     <router-link v-if="mobileView >=650" id="link" to="/myaccount">My Account</router-link>
                 </div>
             </div>
@@ -86,6 +86,7 @@ a { text-decoration: none; }
         // margin: 1px auto;
         padding-top:2%;
         //padding-left:40%;
+        padding-right:60px;
         #linkBox{
             #link{
                 text-align: center;

@@ -1,6 +1,6 @@
 <template>
     <div id="topBox">
-        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+        <h1>Request for an item(s)</h1>
         <h2>{{formatText}}</h2> 
         <router-link id="link" to="/RequestForm"><h3>Request</h3></router-link>
         <i class="fas fa-hands-helping"></i>
@@ -12,7 +12,8 @@ export default {
     name:'Request',
     data(){
         return{
-            formatText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            //formatText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            formatText:"Ask for anything you need and we'll make sure that donators will see them!",
 
         }
     }
@@ -33,7 +34,7 @@ export default {
         font-family: Arial;
         font-style: normal;
         font-weight: 500;
-        font-size: calc(10px + 1vw);
+        font-size: calc(20px + 1vw);
         line-height: calc(15px + 1vw);
         color: #4dd964;
         top:70px;
@@ -48,10 +49,10 @@ export default {
         font-family: Arial;
         font-style: normal;
         font-weight: 500;
-        font-size: calc(1px + 1vw);
+        font-size: calc(5px + 1vw);
         line-height: calc(1px + 1vw);
         color: gray;
-        top:calc(130px + 1vw);
+        top:calc(120px + 1vw);
         left:22%;
         margin:auto;
     }

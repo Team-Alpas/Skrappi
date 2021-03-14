@@ -17,7 +17,7 @@
             <img id="wavehello" src="../assets/wavehello.png">
             <div class="search-box">
                 <a class="search-btn" href="#"><i class="fas fa-search fa-lg"></i></a>
-                <input class="search-txt" type="text" name="" placeholder="Looking for a place to Donate?">
+                <input v-on:keyup.enter="redirectPage" class="search-txt" type="text" name="" placeholder="Have somehting to Donate?">
                 <a class="caret-down-btn" href="#"><i class="fas fa-caret-down fa-lg"></i></a>
             </div>
             <div id="infoBox1">
@@ -53,13 +53,12 @@
         <div id="infoBox5">
         </div>
         <div id='icons'>
-            <img src='../assets/green_disc.png'>
-            <img src='../assets/green_github.png'>
-            <img src='../assets/green_mail.png'>
-            <img src='../assets/green_fb.png'>
-            <img src='../assets/green_twitter.png'>
-            <img src='../assets/green_ig.png'>
-            <img src='../assets/green_linkedin.png'>
+            <i id="disIcon" class="fab fa-discord"></i>
+            <i id="Icon" class="fab fa-mail"></i>
+            <i id="Icon" class="fab fa-facebook"></i>
+            <i id="Icon" class="fab fa-twitter"></i>
+            <i id="Icon" class="fab fa-instagram"></i>
+            <i id="Icon" class="fab fa-linkedin"></i>
         </div>
     </div>
 </template>
@@ -76,6 +75,11 @@ export default {
             lDead:"November 22, 2020, 11:59PM"
         }
     },
+    methods:{
+        redirectPage(){
+            window.location.href = 'http://localhost:8080/#/Donate'
+        }
+    }
 }
 </script>
 
@@ -105,7 +109,7 @@ export default {
             left: 110px;
             float:left;
             height:450px;
-            text-align: center;
+            text-align: left;
             margin-top: 0%;
         h1{
             width: 321.92px;
@@ -143,7 +147,7 @@ export default {
             top: 200px;
             left: 50%;
             height:450px;
-            text-align: center;
+            text-align: left;
             margin-top: 500px;     
             h1{
                 width: 321.92px;
@@ -153,10 +157,10 @@ export default {
                 font-weight: 800;
                 font-size: 72px;
                 line-height: 108px;
-                color:#95d458;
+                color:#4dd964;
             }
             h2{
-                color:#95d458;
+                color:#4dd964;
             }
         }
         #infoBox3{
@@ -164,7 +168,7 @@ export default {
             top: 750px;
             left: 5%;
             height:450px;
-            text-align: center;
+            text-align: left;
             margin-top: 500px;     
             h1{
                 width: 321.92px;
@@ -186,7 +190,7 @@ export default {
             height:350px;
             width:100%;
             text-align:center;
-            background-color: #a2d74a;
+            background-color: #4dd964;
         }
 
         .search-box {
@@ -313,9 +317,18 @@ export default {
     */
     #icons{
         margin-top: 2000px;
-        text-align: center;
-        img{
-            padding: 0 2.5rem;
+        text-align: center; 
+        i{
+            color: #4dd964
+        }
+        #disIcon{
+            padding:5px;
+            font-size:100px;
+        }
+        #Icon{
+            // /padding: 0 2.5rem;
+            padding:20px;
+            font-size:100px;
         }
     }
    

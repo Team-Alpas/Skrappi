@@ -66,6 +66,11 @@ const routes = [
                 component: () => import('@/components/NearRequests.vue'),
                 meta: {title:'NearRequests'},
             },
+            {
+                path:'RequestAccepted',
+                component: () => import('@/components/RequestAccepted.vue'),
+                meta: {title:'RequestAccepted'},
+            },
             
         ]
     }

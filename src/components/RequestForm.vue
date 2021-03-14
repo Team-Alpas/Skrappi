@@ -3,19 +3,27 @@
         <div id="topBox">
             <div id="mapBox">
             <GmapMap
-                :center="{lat:14.590634, lng:120.978764}"
+                :center="{lat:defCoord.lat, lng:defCoord.lng}"
                 :zoom="18"
                 map-type-id="terrain"
                 style="width: 500px; height: 400px"
             >
+            <GmapMarker
+                :key="index"
+                v-for="(m, index) in markers"
+                :position="m.position"
+                :clickable="true"
+                :draggable="true"
+                @click="center=m.position"
+            />
             </GmapMap>
             </div>
             <div id="formBox">
                 <input type='text' id='inForm' name='itemName' placeholder='Item Name'><br>
                 <input type='text' id='inForm' name='itemDesc' placeholder='Item Description'><br>
                 <input type='text' id='inForm' name='Quantity' placeholder='Quantity'><br>
-                <input type='text' id='inForm' name='location' placeholder='Your Location'><br>
-                <h3>Post Request</h3>
+                <input v-on:keyup.enter="onEnter" type='text' id='inForm' name='location' placeholder='Your Location' ><br>           
+                <router-link  id="link" to="/RequestAccepted"><h3>Post Request</h3></router-link>
             </div>
         </div>
         <img id="wave" alt="wave" src="../assets/wave.png">
@@ -31,15 +39,38 @@ export default {
             coordinates:{
                 lat:0,
                 lng:0,
-            }
+            },
+            mapwaCoord:{
+                lat:14.590634,
+                lng:120.978764
+            },
+            defCoord:{
+                lat:14.599372,
+                lng:120.983569,
+            },
+            markers: []
+        }
+    },
+    methods: {
+        drawMarker() {
+            this.markers = [
+                {
+                    position: this.defCoord,
+                },
+            ]
+        },
+        onEnter(){
+            this.defCoord = this.mapwaCoord;
+            this.drawMarker();
         }
     },
     created() {
         this.$getLocation({})
             .then(coordinates => {
                 this.coordinates = coordinates;
-            });
-    }
+                this.drawMarker();
+            })
+    },
 }
 </script>
 
