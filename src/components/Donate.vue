@@ -6,7 +6,7 @@
             <div class="container">
                 <div class="inner">
                     <h1>Donate your waste</h1>
-                    <p>Donating recyclable items to others will not only help others <br>that need it, but also the environment. So donate now!</p>
+                    <p>Donating recyclable items to those that need it will not <br>only help them, but also the environment. So donate now!</p>
                     <div class="search-box">
                         <a class="search-btn" href="#"><i class="fas fa-search fa-lg"></i></a>
                             <input class="search-txt" type="text" name="" placeholder="Search requests near you.">
@@ -99,13 +99,13 @@
             box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
             border-radius: 16px;
             text-align: center;
-            padding: 38px;
+            padding: 45px;
             min-height: 140px;
             .inner {
                 width: 75rem;
                 max-width: calc(100% - 6rem);
                 text-align:center;
-                margin-top:5%;
+                margin-top:3%;
                 margin-left: auto;
                 margin-right: auto;
             }
